@@ -7,11 +7,6 @@ function maketabs(node){
     let gallerytab =document.createElement("div")
     let contacttab =document.createElement("div")
 
-    hometab.class = "tab"
-    beerMenutab.classList.add ("tab")
-    gallerytab.classList.add("tab")
-    contacttab.classList.add("tab")
-
     hometab.dataset.target="home"
     beerMenutab.dataset.target = "beer-menu"
     gallerytab.dataset.target = "gallery"
