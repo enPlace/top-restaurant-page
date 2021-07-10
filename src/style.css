@@ -63,12 +63,12 @@ body{
     grid-row: 2/12;
     grid-column:1/13;
 }
-.menu.active{
+.beer-menu.active{
     
     background-color:#e0c08600;;
     display: flex;
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 20px;
     border-radius: 50px;
     margin-top: 20px;
     margin-right: 30px;
@@ -90,16 +90,19 @@ body{
 .beer-header{
     display: flex;
     padding: 0px;
-    margin-top: 10px;
+    
     margin-bottom: 10px;
     
 }
 .beer-header div{
+    display: flex;
+    align-items: center;
     margin-right: 20px;
     margin-bottom: 10px;
    
 }
-.beer-icon{
+.beer-icon img{
+    width: 15px;
    
 }
 .beer-about{
