@@ -138,6 +138,32 @@ body{
 .info p{
     font-size: 20px;
 }
+.gallery.active{
+    display:flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: start;
+    
+    background-color: rgba(0, 0, 0, 0.877);
+    overflow-x: scroll;
+    overflow-y:scroll;
+    border-radius: 10px;
+    overflow: -moz-scrollbars-vertical; ;
+}
+
+.gallery.active img{
+    max-width: 500px;
+    max-height: 350px;
+    margin: 20px;
+    transition:cubic-bezier(1, 0, 0, 1) .2s;
+
+    
+}
+.gallery.active img:hover{
+    transform: scale(1.2);
+    transition: ease-in-out .4s;
+}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .menu-content::-webkit-scrollbar {

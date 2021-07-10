@@ -9,9 +9,7 @@ function populateBeers() {
     document.getElementById("content").appendChild(beermenu)
     beerList.forEach(beer => {
         formatBeer(beer, beermenu)
-
     })
-
 }
 
 function formatBeer(beerObj, parent) {
@@ -54,18 +52,6 @@ function formatBeer(beerObj, parent) {
     beerdiv.appendChild(about)
 
     parent.appendChild(beerdiv)
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 let beerList = [
