@@ -5,6 +5,7 @@ import pale from './icons/pale.png'
 
 function populateBeers() {
     let beermenu = document.createElement("div")
+    beermenu.id = "beer-menu"
     beermenu.classList.add("menu-content", "beer-menu")
     document.getElementById("content").appendChild(beermenu)
     beerList.forEach(beer => {
@@ -82,7 +83,7 @@ let beerList = [
         name: "Camote's Paw",
         color: "dark",
         type: "Sweet Potato Porter",
-        alc: "8.0",
+        alc: "8.0%",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {

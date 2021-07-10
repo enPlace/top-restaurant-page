@@ -1,3 +1,4 @@
+let tablist
 function maketabs(node){
     let tabs = document.createElement("div")
     tabs.classList.add("tabs")
@@ -17,13 +18,25 @@ function maketabs(node){
     gallerytab.textContent = "Gallery"
     contacttab.textContent = "Contact"
 
-    let tablist = [hometab, beerMenutab, gallerytab, contacttab]
+    tablist = [hometab, beerMenutab, gallerytab]//contacttab
     tablist.forEach(tab =>{
         tab.classList.add("tab")
+        tab.addEventListener("click", (e)=>{
+            console.log(e.target.dataset.target)
+            activator(e.target.dataset.target)
+        })
         tabs.appendChild(tab)
+        
     })
     node.appendChild(tabs)
-
+}
+function activator(target){
+    tablist.forEach(tab=>{
+        document.getElementById(tab.dataset.target).classList.remove("active")
+        
+    })
+   document.getElementById(target).classList.add("active")
+    
 
 }
 const content = ()=>{
