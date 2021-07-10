@@ -161,11 +161,11 @@ body{
 }
 .gallery.active{
     display:flex;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     align-items: center;
     justify-content: start;
-    
+   
     background-color: rgba(0, 0, 0, 0.877);
     overflow-x: scroll;
     overflow-y:scroll;
