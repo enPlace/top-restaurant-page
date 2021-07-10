@@ -1,7 +1,7 @@
 
 function homecontent(){
     let home = document.createElement("div")
-    home.classList.add("menu-content", "home", "active")
+    home.classList.add("menu-content", "home")
     
     
     const title = document.createElement("h1")    
