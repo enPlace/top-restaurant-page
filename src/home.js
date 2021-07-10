@@ -23,10 +23,10 @@ function homecontent(){
     home.appendChild(info)
     
     const img = document.createElement("div")
-    img.classList.add("image")
-
+    img.classList.add("home-image")
+    home.appendChild(img)
     document.getElementById("content").appendChild(home)
-    document.getElementById("content").appendChild(img)
+    
 }
 
 export {homecontent}
