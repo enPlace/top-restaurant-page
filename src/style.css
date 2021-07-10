@@ -60,7 +60,7 @@ body{
     display: none;
 }
 .menu-content.active{
-    grid-row: 2/12;
+    grid-row: 2/13;
     grid-column:1/13;
 }
 .beer-menu.active{
@@ -148,20 +148,21 @@ body{
     background-color: rgba(0, 0, 0, 0.877);
     overflow-x: scroll;
     overflow-y:scroll;
-    border-radius: 10px;
+   
     overflow: -moz-scrollbars-vertical; ;
+    
 }
 
 .gallery.active img{
     max-width: 500px;
-    max-height: 350px;
+    max-height: 300px;
     margin: 20px;
     transition:cubic-bezier(1, 0, 0, 1) .2s;
 
     
 }
 .gallery.active img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: ease-in-out .4s;
 }
 
