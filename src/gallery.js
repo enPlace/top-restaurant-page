@@ -13,7 +13,7 @@ const images = [burial, delib, doges, french1, french2, greenman1, greenman2, se
 function gallerycontent(){
     let gallery = document.createElement("div")
     gallery.id = "gallery"
-    gallery.classList.add("menu-content", "gallery", "active")
+    gallery.classList.add("menu-content", "gallery")
     populateGallery(gallery)
     document.getElementById("content").appendChild(gallery)
 
