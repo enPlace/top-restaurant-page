@@ -11,6 +11,7 @@ function maketabs(node){
     hometab.dataset.target="home"
     beerMenutab.dataset.target = "beer-menu"
     gallerytab.dataset.target = "gallery"
+    gallerytab.id = "gallery-tab"
     contacttab.dataset.target = "contact"
 
     hometab.textContent = "Home"

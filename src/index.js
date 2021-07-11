@@ -10,3 +10,15 @@ homecontent()
 populateBeers()
 gallerycontent()
 
+
+const galleryTab = document.getElementById("gallery-tab")
+let scroller 
+galleryTab.addEventListener("click", ()=>{
+    clearInterval(scroller)
+    scroller = setInterval(scroll, 20)
+})
+
+function scroll(){
+    document.getElementById("gallery").scrollLeft+=1
+}
+

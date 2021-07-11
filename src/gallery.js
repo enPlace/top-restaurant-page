@@ -39,4 +39,8 @@ function populateGallery(node) {
 
 
 
+
+
+
+
 export { gallerycontent }
