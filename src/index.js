@@ -5,13 +5,14 @@ import { populateBeers } from "./beer-menu"
 import './style.css'
 import './reset.css'
 import { gallerycontent, setScroll } from "./gallery"
+import {contact} from './contact'
 
 content()
 homecontent()
 populateBeers()
 gallerycontent()
-
 setScroll()
+contact()
 
 
 

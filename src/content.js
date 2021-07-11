@@ -19,7 +19,7 @@ function maketabs(node){
     gallerytab.textContent = "Gallery"
     contacttab.textContent = "Contact"
 
-    tablist = [hometab, beerMenutab, gallerytab]//contacttab
+    tablist = [hometab, beerMenutab, gallerytab, contacttab]//contacttab
     tablist.forEach(tab =>{
         tab.classList.add("tab")
         tab.addEventListener("click", (e)=>{

@@ -1,7 +1,12 @@
 function contact(){
-    let contact = document.createElement("div")
-    contact. id = "contact"
-    contact.classList.add("menu-content")
+    let contactdiv = document.createElement("div")
+    contactdiv. id = "contact"
+    contactdiv.classList.add("menu-content", "contact","active")
+    map(contactdiv)
+    contactList(contactdiv)
+    document.getElementById("content").appendChild(contactdiv)
+
+
 }
 
 
@@ -11,11 +16,11 @@ function map(node){
     newmap.id = "map"
     node.appendChild(newmap)
 }
-function contactList(){
+function contactList(node){
     const contactInfo = document.createElement("div")
-    contactInfo.class = "contact-info"
-    h1 = document.createElement("h1")
-    h1.textContent = "Want to check out some of Aseville best breweries? Links below to the places that inspired this site:"
+    contactInfo.classList.add("contact-info")
+    const h1 = document.createElement("h1")
+    h1.textContent = "Want to check out some of Aseville best breweries? Here are some of the places that inspired this site:"
     const breweryLinks = document.createElement("ul")
     pubList.forEach(pub=>{
         let li =document.createElement("li")
@@ -29,6 +34,7 @@ function contactList(){
 
     contactInfo.appendChild(h1)
     contactInfo.appendChild(breweryLinks)    
+    node.appendChild(contactInfo)
 }
 
 const pubList = [
@@ -61,3 +67,5 @@ const pubList = [
         site: "https://www.wickedweedbrewing.com/"
     },
 ]
+
+export {contact}

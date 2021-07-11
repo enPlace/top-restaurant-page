@@ -77,6 +77,7 @@ body{
     display: none;
 }
 .menu-content.active{
+    display:grid;
     grid-row: 2/12;
     grid-column:1/13;
 }
@@ -193,7 +194,53 @@ body{
     transform: scale(1.1);
     transition: ease-in-out .4s;
 }
-
+.contact.active{
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 20px;
+}
+.contact h1{
+    font-size: 25px;
+    font-family: 'Trade Winds', cursive;
+    text-align: center;
+}
+.contact li{
+    list-style:;
+    font-size: 20px;
+    margin: 10px;
+}
+.contact a{
+    color: rgb(166, 213, 235);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+ul{
+    display:flex;
+    flex-direction: column;
+}
+#map{
+    
+    width: 90%;
+    height: 90%;
+    margin-top: 40px;
+    margin-left: 20px;
+    grid-row: 1/5;
+    grid-column: 1/8;
+    
+    
+}
+.contact-info{
+    grid-column: 8/13;
+    grid-row: 2/13;
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
 /* Hide scrollbar for Chrome, Safari and Opera */
 .menu-content::-webkit-scrollbar {
     display: none;
