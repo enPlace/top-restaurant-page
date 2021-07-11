@@ -1,7 +1,13 @@
 function contact(){
     
 }
-
+function map(node){
+    let newmap = document.createElement("iframe")
+    newmap.src = "https://www.google.com/maps/d/embed?mid=173T-M3Nim6oysQFsZ4U_bNVe-_m4ogtx"
+    newmap.id = "map"
+    node.appendChild(newmap)
+}
+}
 const pubList = [
     {
         name: "Burial Beer Co. ",
