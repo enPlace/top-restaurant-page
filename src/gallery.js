@@ -37,10 +37,22 @@ function populateGallery(node) {
     })
 }
 
+let scroller 
+function setScroll(tab){
+    const galleryTab = document.getElementById("gallery-tab")
+    galleryTab.addEventListener("click", ()=>{
+        clearInterval(scroller)
+        scroller = setInterval(scroll, 20)
+    })
+}
+
+function scroll(){
+    document.getElementById("gallery").scrollLeft+=1
+}
 
 
 
 
 
 
-export { gallerycontent }
+export { gallerycontent, setScroll}

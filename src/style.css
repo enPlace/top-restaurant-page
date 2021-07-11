@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+@import url('./reset.css');
 html{
     width: 100%;
     height: 100%;
@@ -21,7 +22,7 @@ body{
 .content{
     color: white;
     width: 1000px;
-    min-width: 700px;
+    min-width: 670px;
     height: 98%;
     background-color: #fddb9fef;
     background-image: url("./wood2.jpg");
@@ -33,7 +34,7 @@ body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12,1fr);
     margin: 50px;
-    box-shadow:  15px 10px 10px rgba(0, 0, 0, 0.527);
+    box-shadow:  15px 10px 10px rgba(0, 0, 0, 0.63);
     
 }
 
@@ -90,6 +91,7 @@ body{
     margin-right: 30px;
     margin-left:30px;
     overflow-y: scroll;
+    scrollbar-width: none;
     -ms-overflow-style: none;  /* IE and Edge */
     
 }
@@ -138,20 +140,26 @@ body{
 
 }
 .home-image{
-    min-width: 500px;
-    grid-column: 8/13;
+    min-width: 550px;
+    grid-column: 9/13;
     grid-row: 1/13;
     background-image: url("3d0f9ab08fae06cffe5a24c53db22fd7.png");
     background-size:cover;
     background-position: center;
+    margin-top: -20%
 }
 .info{
    padding: 20px;
    padding-left: 40px;
-    grid-column: 1/7;
-    grid-row: 4/11;
-    background-color: #0a0a0ac5;
-    border-radius: 10px;;
+    grid-column: 1/8;
+    grid-row: 5/13;
+    background-color: #0c0c0ce5;
+    border-radius: 10px;
+    margin-left: -20%;
+    box-shadow:  15px 10px 10px rgba(0, 0, 0, 0.705);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
 }
 .info h1{
     font-size: 40px;
@@ -170,7 +178,6 @@ body{
     overflow-x: scroll;
     overflow-y:scroll;
    
-    overflow: -moz-scrollbars-vertical; ;
     
 }
 
