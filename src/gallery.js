@@ -10,21 +10,33 @@ import funk from './gallery-images/Wicked-Weed-Funkatorium-1.jpg'
 
 const images = [burial, delib, doges, french1, french2, greenman1, greenman2, sellick, funk]
 
-function gallerycontent(){
+
+
+
+
+function gallerycontent() {
     let gallery = document.createElement("div")
     gallery.id = "gallery"
     gallery.classList.add("menu-content", "gallery")
     populateGallery(gallery)
     document.getElementById("content").appendChild(gallery)
 
+    gallery.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        gallery.scrollLeft += e.deltaY;
+        clearInterval(scroller)
+    })
+
 }
 
-function populateGallery(node){
-    images.forEach(image=>{
+function populateGallery(node) {
+    images.forEach(image => {
         const newimg = document.createElement("img")
         newimg.src = image
         node.appendChild(newimg)
     })
 }
 
-export{gallerycontent}
+
+
+export { gallerycontent }
