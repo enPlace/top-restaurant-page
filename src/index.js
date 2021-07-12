@@ -1,13 +1,13 @@
 
-import{content} from "./content"
-import{homecontent} from "./home"
+import { tabs } from "./tabs"
+import { homecontent } from "./home"
 import { populateBeers } from "./beer-menu"
 import './style.css'
 import './reset.css'
 import { gallerycontent, setScroll } from "./gallery"
-import {contact} from './contact'
+import { contact } from './contact'
 
-content()
+tabs()
 homecontent()
 populateBeers()
 gallerycontent()

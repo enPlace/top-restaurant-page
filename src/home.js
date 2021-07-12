@@ -1,10 +1,10 @@
-function homecontent(){
+function homecontent() {
     let home = document.createElement("div")
     home.classList.add("menu-content", "home")
     home.id = "home"
-    
-    
-    const title = document.createElement("h1")    
+
+
+    const title = document.createElement("h1")
     title.textContent = "Blue Ridge Brewery"
     const titlediv = document.createElement("div")
     titlediv.classList.add("title")
@@ -21,7 +21,7 @@ function homecontent(){
     info.appendChild(titlediv)
     info.appendChild(descdiv)
     home.appendChild(info)
-    
+
     const img = document.createElement("div")
     img.classList.add("home-image")
     home.appendChild(img)
@@ -29,4 +29,4 @@ function homecontent(){
 
 }
 
-export {homecontent}
+export { homecontent }

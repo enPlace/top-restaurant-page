@@ -1,14 +1,14 @@
 let tablist
-function maketabs(node){
+function maketabs(node) {
     let tabs = document.createElement("div")
     tabs.classList.add("tabs")
     tabs.id = "tabs"
-    let hometab =document.createElement("div")
-    let beerMenutab =document.createElement("div")
-    let gallerytab =document.createElement("div")
-    let contacttab =document.createElement("div")
+    let hometab = document.createElement("div")
+    let beerMenutab = document.createElement("div")
+    let gallerytab = document.createElement("div")
+    let contacttab = document.createElement("div")
 
-    hometab.dataset.target="home"
+    hometab.dataset.target = "home"
     beerMenutab.dataset.target = "beer-menu"
     gallerytab.dataset.target = "gallery"
     gallerytab.id = "gallery-tab"
@@ -20,27 +20,27 @@ function maketabs(node){
     contacttab.textContent = "Contact"
 
     tablist = [hometab, beerMenutab, gallerytab, contacttab]//contacttab
-    tablist.forEach(tab =>{
+    tablist.forEach(tab => {
         tab.classList.add("tab")
-        tab.addEventListener("click", (e)=>{
+        tab.addEventListener("click", (e) => {
             console.log(e.target.dataset.target)
             activator(e.target.dataset.target)
         })
         tabs.appendChild(tab)
-        
+
     })
     node.appendChild(tabs)
 }
-function activator(target){
-    tablist.forEach(tab=>{
+function activator(target) {
+    tablist.forEach(tab => {
         document.getElementById(tab.dataset.target).classList.remove("active")
-        
+
     })
-   document.getElementById(target).classList.add("active")
-    
+    document.getElementById(target).classList.add("active")
+
 
 }
-const content = ()=>{
+const tabs = () => {
     let cont = document.createElement("div")
     cont.classList.add("content")
     cont.id = "content"
@@ -49,4 +49,5 @@ const content = ()=>{
 }
 
 
-export {content}
+
+export { tabs }

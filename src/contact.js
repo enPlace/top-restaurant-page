@@ -1,7 +1,7 @@
-function contact(){
+function contact() {
     let contactdiv = document.createElement("div")
-    contactdiv. id = "contact"
-    contactdiv.classList.add("menu-content", "contact","active")
+    contactdiv.id = "contact"
+    contactdiv.classList.add("menu-content", "contact", "active")
     map(contactdiv)
     contactList(contactdiv)
     document.getElementById("content").appendChild(contactdiv)
@@ -10,22 +10,22 @@ function contact(){
 }
 
 
-function map(node){
+function map(node) {
     let newmap = document.createElement("iframe")
     newmap.src = "https://www.google.com/maps/d/embed?mid=173T-M3Nim6oysQFsZ4U_bNVe-_m4ogtx"
     newmap.id = "map"
     node.appendChild(newmap)
 }
-function contactList(node){
+function contactList(node) {
     const contactInfo = document.createElement("div")
     contactInfo.classList.add("contact-info")
     const h1 = document.createElement("h1")
     h1.textContent = "Want to check out some of Aseville best breweries? Here are some of the places that inspired this site:"
     const breweryLinks = document.createElement("ul")
-    pubList.forEach(pub=>{
-        let li =document.createElement("li")
+    pubList.forEach(pub => {
+        let li = document.createElement("li")
         li.class = "brewery-link"
-        let link =document.createElement("a")
+        let link = document.createElement("a")
         link.textContent = pub.name
         link.href = pub.site
         li.appendChild(link)
@@ -33,7 +33,7 @@ function contactList(node){
     })
 
     contactInfo.appendChild(h1)
-    contactInfo.appendChild(breweryLinks)    
+    contactInfo.appendChild(breweryLinks)
     node.appendChild(contactInfo)
 }
 
@@ -68,4 +68,4 @@ const pubList = [
     },
 ]
 
-export {contact}
+export { contact }
