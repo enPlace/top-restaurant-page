@@ -26,6 +26,7 @@ function contactList(node) {
         let link = document.createElement("a")
         link.textContent = pub.name
         link.href = pub.site
+        link.target = "_blank"
         li.appendChild(link)
         breweryLinks.appendChild(li)
     })

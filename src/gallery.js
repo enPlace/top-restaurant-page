@@ -1,7 +1,7 @@
 import octocat from './gallery-images/octocat2.jpg'
 import burial from './gallery-images/burial.jpg'
 import delib from './gallery-images/Deliberate_Distortions_mock.jpg'
-import doges from './gallery-images/doges.jpg'
+import camote from './gallery-images/camote.jpg'
 import french1 from './gallery-images/french-broad-river-brewery.jpg'
 import french2 from './gallery-images/french-broad.jpg'
 import greenman1 from './gallery-images/greenman.jpg'
@@ -9,7 +9,7 @@ import greenman2 from './gallery-images/GreenMan2.jpg'
 import sellick from './gallery-images/sellick.jpg'
 import funk from './gallery-images/Wicked-Weed-Funkatorium-1.jpg'
 
-const images = [octocat, burial, delib, doges, french1, french2, greenman1, greenman2, sellick, funk]
+const images = [octocat, burial, camote, french1, delib, french2, greenman1, greenman2, sellick, funk]
 
 function gallerycontent() {
     let gallery = document.createElement("div")

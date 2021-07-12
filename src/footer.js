@@ -10,9 +10,13 @@ function footer(){
     me.classList.add("creator-info")
     foot.appendChild(me)
 
+    let link = document.createElement("a")
+    link.href = "https://github.com/enPlace/top-restaurant-page"
+    link.target = "_blank"
     let img = document.createElement("img")
     img.src = gitIcon
-    foot.appendChild(img)
+    link.appendChild(img)
+    foot.appendChild(link)
     document.getElementById("content").appendChild(foot)    
 }
 
