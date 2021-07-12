@@ -6,8 +6,10 @@ import './style.css'
 import './reset.css'
 import { gallerycontent, setScroll } from "./gallery"
 import { contact } from './contact'
+import { footer } from "./footer"
 
 tabs()
+footer()
 homecontent()
 populateBeers()
 gallerycontent()

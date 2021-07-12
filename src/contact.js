@@ -1,7 +1,7 @@
 function contact() {
     let contactdiv = document.createElement("div")
     contactdiv.id = "contact"
-    contactdiv.classList.add("menu-content", "contact", "active")
+    contactdiv.classList.add("menu-content", "contact")
     map(contactdiv)
     contactList(contactdiv)
     document.getElementById("content").appendChild(contactdiv)

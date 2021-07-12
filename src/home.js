@@ -1,6 +1,6 @@
 function homecontent() {
     let home = document.createElement("div")
-    home.classList.add("menu-content", "home")
+    home.classList.add("menu-content", "home", "active")
     home.id = "home"
 
 
