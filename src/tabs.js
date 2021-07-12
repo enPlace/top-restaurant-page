@@ -48,6 +48,4 @@ const tabs = () => {
     document.body.appendChild(cont)
 }
 
-
-
 export { tabs }

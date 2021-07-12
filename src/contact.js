@@ -5,10 +5,7 @@ function contact() {
     map(contactdiv)
     contactList(contactdiv)
     document.getElementById("content").appendChild(contactdiv)
-
-
 }
-
 
 function map(node) {
     let newmap = document.createElement("iframe")
@@ -16,11 +13,12 @@ function map(node) {
     newmap.id = "map"
     node.appendChild(newmap)
 }
+
 function contactList(node) {
     const contactInfo = document.createElement("div")
     contactInfo.classList.add("contact-info")
     const h1 = document.createElement("h1")
-    h1.textContent = "Want to check out some of Aseville best breweries? Here are some of the places that inspired this site:"
+    h1.textContent = "Want to check out some of Aseville's best breweries? Here are some of the places that inspired this site:"
     const breweryLinks = document.createElement("ul")
     pubList.forEach(pub => {
         let li = document.createElement("li")

@@ -1,3 +1,4 @@
+import octocat from './gallery-images/octocat2.jpg'
 import burial from './gallery-images/burial.jpg'
 import delib from './gallery-images/Deliberate_Distortions_mock.jpg'
 import doges from './gallery-images/doges.jpg'
@@ -8,11 +9,7 @@ import greenman2 from './gallery-images/GreenMan2.jpg'
 import sellick from './gallery-images/sellick.jpg'
 import funk from './gallery-images/Wicked-Weed-Funkatorium-1.jpg'
 
-const images = [burial, delib, doges, french1, french2, greenman1, greenman2, sellick, funk]
-
-
-
-
+const images = [octocat, burial, delib, doges, french1, french2, greenman1, greenman2, sellick, funk]
 
 function gallerycontent() {
     let gallery = document.createElement("div")
@@ -49,10 +46,5 @@ function setScroll(tab){
 function scroll(){
     document.getElementById("gallery").scrollLeft+=1
 }
-
-
-
-
-
 
 export { gallerycontent, setScroll}
