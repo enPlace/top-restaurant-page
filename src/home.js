@@ -14,7 +14,7 @@ function homecontent() {
     const description = document.createElement("div")
     description.classList.add("description")
     const p1 = document.createElement("p")
-    p1.innerHTML = '<span class ="four-space"></span>As a part of The Odin Project curriculum, this simple restaurant page is dynamically rendered, and all of its content is generated using JavaScript. The menu itself is an homage to the miriad of great breweries in Asheville, North Carolina. The beer names on the menu come from either breweries there, from my wife, or from my dog.'
+    p1.innerHTML = '<span class ="four-space"></span>As a part of The Odin Project curriculum, this simple restaurant page is dynamically rendered, and all of its content is generated using JavaScript. The menu itself is an homage to the miriad of great breweries in Asheville, North Carolina, and the beer names on the menu come from either breweries there, my wife, or my dog.'
 
     description.appendChild(p1)
     const p2 = document.createElement("p")
