@@ -13,7 +13,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
 
-      title: 'Development', //title of webpage that appears in tab and top of browser
+      title: 'Blue Ridge Beer', //title of webpage that appears in tab and top of browser
 
     }),
 
