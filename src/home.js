@@ -1,5 +1,5 @@
 import webpackIcon from './icons/webpack-logo-svg-vector.svg'
-import reaper from './3d0f9ab08fae06cffe5a24c53db22fd7.png'
+import reaper from './background-imgs/3d0f9ab08fae06cffe5a24c53db22fd7.png'
 function homecontent() {
     let home = document.createElement("div")
     home.classList.add("menu-content", "home", "active")
