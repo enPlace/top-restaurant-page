@@ -160,7 +160,7 @@ body{
 }
 .menu-content.active{
     display:grid;
-    grid-row: 2/12;
+    grid-row: 2/13;
     grid-column:1/13;
 }
 .beer-menu.active{
@@ -263,7 +263,7 @@ ul{
 #map{
     
     width: 90%;
-    height: 100%;
+    height: 90%;
     margin-top: 40px;
     margin-left: 20px;
     grid-row: 1/12;
@@ -336,7 +336,7 @@ ul{
     }
     .contact-info{
         grid-row:1/13;
-        margin-bottom: -15%;
+        margin-bottom: -9%;
     }
     #map{
         grid-row:1/13;

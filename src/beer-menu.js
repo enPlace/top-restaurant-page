@@ -57,26 +57,34 @@ function formatBeer(beerObj, parent) {
 
 let beerList = [
     {
-        name: "Burial Brew",
-        type: "Smoked Porter",
+        name: "Highland Thunderstruck",
+        type: "Coffee Porter",
         color: "dark",
-        alc: "7.5%",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        alc: "5.8%",
+        description: "This coffee porter is brewed with 1.5 lbs of Dynamite Roasting coffee per barrel."
+
+    },
+    {
+        name: "Burial Brew",
+        type: "Imperial Stout",
+        color: "dark",
+        alc: "15%",
+        description: "Maple coconut pralines, pecan pie covered in white chocolate glaze and a rinsing of salted caramel coconut shake."
     },
     {
         name: "Idle Dereliction",
         color: "orange",
-        type: "IPA",
-        alc: "4.5%",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        type: "Double IPA",
+        alc: "6.2%",
+        description: " A West Coast-style made with barley and Riverbend malted rye."
 
     },
     {
         name: "Wicked Weed",
         color: "pale",
-        type: "Sour Ale",
-        alc: "6.3%",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        type: "Session IPA",
+        alc: "4.5%",
+        description: "Huge hop flavor and aroma from Amarillo, Citra, Mosaic, and Motueka hops, with low bitterness and low ABV."
 
     },
     {
@@ -84,21 +92,21 @@ let beerList = [
         color: "dark",
         type: "Sweet Potato Porter",
         alc: "8.0%",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        description: "A rich and robust porter brewed with roasted sweet potatoes, featuring notes of caramel, chocolate and coffee."
     },
     {
         name: "Cecibaza Ale",
         color: "orange",
         type: "Pumpkin Ale",
         alc: "5.2%",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        description: "A hearty, deeply balanced ale with a cornucopia of fall aromas."
     },
     {
         name: "Green Man",
         type: "IPA",
         color: "pale",
         alc: "5.6%",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        description: "A legendary India Pale Ale, the Green Man IPA is very hoppy with a properly balanced malt body."
 
     },
     {
@@ -106,15 +114,15 @@ let beerList = [
         type: "Brown Ale",
         color: "brown",
         alc: "5.5%",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        description: "Crafted as an American ode to a traditional English brown."
 
     },
     {
         name: "The Funkatorium",
-        type: "Funky Sour Ale",
+        type: "Saison",
         color: "orange",
         alc: "5.6%",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        description: "Inspired by rosé wines. This farmhouse ale is fermented with our house brettanomyces culture."
 
     },
     {
@@ -122,9 +130,10 @@ let beerList = [
         type: "Scotish Ale",
         color: "brown",
         alc: "7.4%",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        description: "Roasty and sweet with a silky mouth feel."
 
-    }
+    },
+    
 
 ]
 
