@@ -1,5 +1,5 @@
 # top-restaurant-page
-![](background-imgs/Screenshot_20210715_115327.png)
+![](src/background-imgs/Screenshot_20210715_115327.png)
 
 As a part of The Odin Project curriculum, this simple restaurant page is dynamically rendered, and all of its content is generated using JavaScript. The page was compiled using Webpack, and styled with CSS Flexbox and Grid.
 
